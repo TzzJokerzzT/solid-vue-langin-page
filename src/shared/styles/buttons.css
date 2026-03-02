@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Button Component
+   ========================================================================== */
+
+.button {
+  display: inline-flex;
+  font-size: var(--font-size-xxs);
+  letter-spacing: 0px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 16px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  background-color: var(--color-bg-3);
+  color: var(--color-text-1) !important;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  justify-content: center;
+  padding: 16px 32px;
+  height: 48px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.button:hover {
+  background: #262a33;
+}
+
+.button:active {
+  outline: 0;
+}
+
+.button::before {
+  border-radius: var(--radius-sm);
+}
+
+.button-sm {
+  padding: 8px 24px;
+  height: 32px;
+}
+
+.button-primary {
+  background: #097dea;
+  background: linear-gradient(65deg, var(--color-primary-1) 0, var(--color-primary-2) 100%);
+}
+
+.button-primary:hover {
+  background: #0982f4;
+  background: linear-gradient(65deg, #0275e1 0, #198ffd 100%);
+}
+
+.button-block {
+  display: flex;
+  width: 100%;
+}
+
+.button-shadow {
+  box-shadow: var(--shadow-default);
+}
+
+@media (max-width: 640px) {
+  .button-wide-mobile {
+    width: 100%;
+    max-width: 280px;
+  }
+}

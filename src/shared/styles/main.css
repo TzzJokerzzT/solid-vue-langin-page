@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Main Styles - Entry Point
+   ========================================================================== */
+
+@import './variables.css';
+@import './reset.css';
+@import './typography.css';
+@import './utilities.css';
+@import './buttons.css';
+
+/* ==========================================================================
+   Section Styles
+   ========================================================================== */
+
+.section {
+  position: relative;
+}
+
+.section-inner {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 641px) {
+  .section-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+.section-title {
+  margin-bottom: 16px;
+}
+
+.section-paragraph {
+  margin-bottom: 0;
+}

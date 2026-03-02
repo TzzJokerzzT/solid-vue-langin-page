@@ -1,0 +1,92 @@
+/* ==========================================================================
+   CSS Variables - Design Tokens
+   ========================================================================== */
+
+:root {
+  /* Colors - Typography */
+  --color-text-1: #ffffff;
+  --color-text-2: #8a94a7;
+  --color-text-3: #3b404c;
+
+  /* Colors - Background */
+  --color-bg-1: #15181d;
+  --color-bg-2: #1d2026;
+  --color-bg-3: #242830;
+  --color-bg-4: #2c3039;
+
+  /* Colors - Primary */
+  --color-primary-1: #0270d7;
+  --color-primary-2: #0f8afd;
+  --color-primary-3: #0256a4;
+
+  /* Colors - Accent */
+  --color-accent: #00bffb;
+
+  /* Typography - Font Families */
+  --font-family-base: 'IBM Plex Sans', sans-serif;
+  --font-family-code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+  --font-family-pre: 'Courier 10 Pitch', Courier, monospace;
+
+  /* Typography - Font Sizes (Mobile) */
+  --font-size-h1: 38px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  --font-size-body: 20px;
+  --font-size-sm: 18px;
+  --font-size-xs: 16px;
+  --font-size-xxs: 14px;
+
+  /* Typography - Line Heights (Mobile) */
+  --line-height-h1: 48px;
+  --line-height-h2: 42px;
+  --line-height-h3: 34px;
+  --line-height-h4: 30px;
+  --line-height-body: 30px;
+  --line-height-sm: 28px;
+  --line-height-xs: 24px;
+  --line-height-xxs: 22px;
+
+  /* Typography - Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Layout */
+  --container-width: 1080px;
+  --container-width-sm: 800px;
+  --content-padding-mobile: 16px;
+  --content-padding-desktop: 24px;
+
+  /* Spacing */
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+
+  /* Border Radius */
+  --radius-sm: 2px;
+
+  /* Shadows */
+  --shadow-default: -20px 32px 64px rgba(0, 0, 0, 0.25);
+}
+
+/* Desktop Typography Overrides */
+@media (min-width: 641px) {
+  :root {
+    --font-size-h1: 44px;
+    --font-size-h2: 38px;
+    --font-size-h3: 32px;
+    --font-size-h4: 24px;
+
+    --line-height-h1: 54px;
+    --line-height-h2: 48px;
+    --line-height-h3: 42px;
+    --line-height-h4: 34px;
+  }
+}
