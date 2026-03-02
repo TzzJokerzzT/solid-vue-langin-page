@@ -59,7 +59,7 @@ Solid Blog is a dark-themed landing page template designed for startups and SaaS
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/TzzJokerzzT/solid-vue-langin-page.git
 cd solid-blog
 
 # Install dependencies
