@@ -2,6 +2,8 @@
 
 Una plantilla moderna de landing page con Vue 3 para startups, migrada desde una plantilla HTML/CSS/JavaScript a una aplicación Vue completamente componentizada.
 
+**🌐 Idioma**: **Ingles** | [Ingles](README.md)
+
 ---
 
 ## Tabla de Contenidos
@@ -24,25 +26,25 @@ Solid Blog es una plantilla de landing page con tema oscuro diseñada para start
 
 ### Stack Tecnológico
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| **Vue** | 3.5.29 | Framework frontend (Composition API con `<script setup>`) |
-| **Vue Router** | 5.0.3 | Enrutamiento del lado del cliente |
-| **Pinia** | 3.0.4 | Gestión de estado |
-| **Vite** | 7.3.1 | Herramienta de construcción y servidor de desarrollo |
-| **TypeScript** | 5.9.3 | Seguridad de tipos |
-| **anime.js** | 3.2.2 | Biblioteca de animaciones JavaScript |
-| **ScrollReveal** | 4.0.9 | Animaciones basadas en scroll |
+| Tecnología       | Versión | Propósito                                                 |
+| ---------------- | ------- | --------------------------------------------------------- |
+| **Vue**          | 3.5.29  | Framework frontend (Composition API con `<script setup>`) |
+| **Vue Router**   | 5.0.3   | Enrutamiento del lado del cliente                         |
+| **Pinia**        | 3.0.4   | Gestión de estado                                         |
+| **Vite**         | 7.3.1   | Herramienta de construcción y servidor de desarrollo      |
+| **TypeScript**   | 5.9.3   | Seguridad de tipos                                        |
+| **anime.js**     | 3.2.2   | Biblioteca de animaciones JavaScript                      |
+| **ScrollReveal** | 4.0.9   | Animaciones basadas en scroll                             |
 
 ### Herramientas de Desarrollo
 
-| Herramienta | Propósito |
-|-------------|-----------|
-| **Bun** | Gestor de paquetes |
-| **ESLint** | Análisis de código JavaScript/TypeScript |
-| **Oxlint** | Analizador rápido basado en Rust |
-| **Oxfmt** | Formateador de código basado en Rust |
-| **vue-tsc** | Verificación de tipos para archivos Vue |
+| Herramienta | Propósito                                |
+| ----------- | ---------------------------------------- |
+| **Bun**     | Gestor de paquetes                       |
+| **ESLint**  | Análisis de código JavaScript/TypeScript |
+| **Oxlint**  | Analizador rápido basado en Rust         |
+| **Oxfmt**   | Formateador de código basado en Rust     |
+| **vue-tsc** | Verificación de tipos para archivos Vue  |
 
 ---
 
@@ -69,13 +71,13 @@ bun run dev
 
 ### Scripts Disponibles
 
-| Script | Comando | Descripción |
-|--------|---------|-------------|
-| `dev` | `bun run dev` | Inicia el servidor de desarrollo en `http://localhost:5173` |
-| `build` | `bun run build` | Verifica tipos y construye para producción |
-| `preview` | `bun run preview` | Previsualiza la construcción de producción localmente |
-| `lint` | `bun run lint` | Ejecuta todos los analizadores (Oxlint + ESLint) |
-| `format` | `bun run format` | Formatea el código fuente con Oxfmt |
+| Script    | Comando           | Descripción                                                 |
+| --------- | ----------------- | ----------------------------------------------------------- |
+| `dev`     | `bun run dev`     | Inicia el servidor de desarrollo en `http://localhost:5173` |
+| `build`   | `bun run build`   | Verifica tipos y construye para producción                  |
+| `preview` | `bun run preview` | Previsualiza la construcción de producción localmente       |
+| `lint`    | `bun run lint`    | Ejecuta todos los analizadores (Oxlint + ESLint)            |
+| `format`  | `bun run format`  | Formatea el código fuente con Oxfmt                         |
 
 ---
 
@@ -134,27 +136,27 @@ La migración siguió estos principios clave:
 
 ### Secciones HTML a Componentes Vue
 
-| Sección HTML Original | Componente Vue |
-|-----------------------|----------------|
-| `<header>` | `SiteHeader.vue` |
-| `<section class="hero">` | `HeroSection.vue` |
+| Sección HTML Original        | Componente Vue                            |
+| ---------------------------- | ----------------------------------------- |
+| `<header>`                   | `SiteHeader.vue`                          |
+| `<section class="hero">`     | `HeroSection.vue`                         |
 | `<section class="features">` | `FeaturesSection.vue` + `FeatureCard.vue` |
-| `<section class="pricing">` | `PricingSection.vue` |
-| `<section class="cta">` | `CtaSection.vue` |
-| `<footer>` | `SiteFooter.vue` |
+| `<section class="pricing">`  | `PricingSection.vue`                      |
+| `<section class="cta">`      | `CtaSection.vue`                          |
+| `<footer>`                   | `SiteFooter.vue`                          |
 
 ### Organización del CSS
 
 El archivo CSS monolítico original se dividió en:
 
-| Archivo | Contenido |
-|---------|-----------|
-| `variables.css` | Propiedades CSS personalizadas (tokens de diseño) |
-| `reset.css` | Normalización del navegador |
-| `typography.css` | Estilos de encabezados y texto |
-| `buttons.css` | Estilos del componente botón |
-| `utilities.css` | Clases utilitarias |
-| `main.css` | Punto de entrada que importa todos los módulos |
+| Archivo          | Contenido                                         |
+| ---------------- | ------------------------------------------------- |
+| `variables.css`  | Propiedades CSS personalizadas (tokens de diseño) |
+| `reset.css`      | Normalización del navegador                       |
+| `typography.css` | Estilos de encabezados y texto                    |
+| `buttons.css`    | Estilos del componente botón                      |
+| `utilities.css`  | Clases utilitarias                                |
+| `main.css`       | Punto de entrada que importa todos los módulos    |
 
 ### JavaScript a Composables
 
@@ -166,6 +168,7 @@ Migrado: src/features/landing/composables/useHeroAnimation.ts
 ```
 
 Este composable:
+
 - Encapsula toda la lógica de animación de la sección hero
 - Utiliza hooks del ciclo de vida de Vue (`onMounted`, `onUnmounted`)
 - Proporciona limpieza adecuada de las animaciones
@@ -201,10 +204,10 @@ App.vue
 
 **Props:**
 
-| Prop | Tipo | Por Defecto | Descripción |
-|------|------|-------------|-------------|
-| `logoSrc` | `string` | `'/images/logo.svg'` | Ruta a la imagen del logo |
-| `logoAlt` | `string` | `'Solid'` | Texto alternativo para el logo |
+| Prop      | Tipo     | Por Defecto          | Descripción                    |
+| --------- | -------- | -------------------- | ------------------------------ |
+| `logoSrc` | `string` | `'/images/logo.svg'` | Ruta a la imagen del logo      |
+| `logoAlt` | `string` | `'Solid'`            | Texto alternativo para el logo |
 
 **Uso:**
 
@@ -222,14 +225,14 @@ App.vue
 
 **Props:**
 
-| Prop | Tipo | Por Defecto | Descripción |
-|------|------|-------------|-------------|
-| `title` | `string` | `'Landing template for startups'` | Titular principal |
-| `description` | `string` | `'Our landing page template...'` | Texto descriptivo del hero |
-| `primaryButtonText` | `string` | `'Get started now'` | Texto del botón CTA primario |
-| `primaryButtonHref` | `string` | `'#'` | Enlace del botón CTA primario |
-| `secondaryButtonText` | `string` | `'Learn more'` | Texto del botón CTA secundario |
-| `secondaryButtonHref` | `string` | `'#'` | Enlace del botón CTA secundario |
+| Prop                  | Tipo     | Por Defecto                       | Descripción                     |
+| --------------------- | -------- | --------------------------------- | ------------------------------- |
+| `title`               | `string` | `'Landing template for startups'` | Titular principal               |
+| `description`         | `string` | `'Our landing page template...'`  | Texto descriptivo del hero      |
+| `primaryButtonText`   | `string` | `'Get started now'`               | Texto del botón CTA primario    |
+| `primaryButtonHref`   | `string` | `'#'`                             | Enlace del botón CTA primario   |
+| `secondaryButtonText` | `string` | `'Learn more'`                    | Texto del botón CTA secundario  |
+| `secondaryButtonHref` | `string` | `'#'`                             | Enlace del botón CTA secundario |
 
 **Uso:**
 
@@ -252,18 +255,18 @@ App.vue
 
 **Props:**
 
-| Prop | Tipo | Por Defecto | Descripción |
-|------|------|-------------|-------------|
-| `title` | `string` | `'Build up the whole...'` | Título de la sección |
-| `description` | `string` | `'Excepteur sint occaecat...'` | Descripción de la sección |
-| `features` | `Feature[]` | 6 características por defecto | Array de objetos de características |
+| Prop          | Tipo        | Por Defecto                    | Descripción                         |
+| ------------- | ----------- | ------------------------------ | ----------------------------------- |
+| `title`       | `string`    | `'Build up the whole...'`      | Título de la sección                |
+| `description` | `string`    | `'Excepteur sint occaecat...'` | Descripción de la sección           |
+| `features`    | `Feature[]` | 6 características por defecto  | Array de objetos de características |
 
 **Interfaz del Objeto Feature:**
 
 ```typescript
 interface Feature {
-  icon: string      // Ruta al icono SVG
-  title: string     // Título de la característica
+  icon: string // Ruta al icono SVG
+  title: string // Título de la característica
   description: string // Descripción de la característica
 }
 ```
@@ -275,7 +278,7 @@ interface Feature {
   title="Por Qué Elegirnos"
   :features="[
     { icon: '/images/icon-1.svg', title: 'Rápido', description: 'Velocidad relámpago' },
-    { icon: '/images/icon-2.svg', title: 'Seguro', description: 'Seguridad nivel bancario' }
+    { icon: '/images/icon-2.svg', title: 'Seguro', description: 'Seguridad nivel bancario' },
   ]"
 />
 ```
@@ -290,11 +293,11 @@ interface Feature {
 
 **Props:**
 
-| Prop | Tipo | Requerido | Descripción |
-|------|------|-----------|-------------|
-| `icon` | `string` | Sí | Ruta al icono SVG |
-| `title` | `string` | Sí | Título de la característica |
-| `description` | `string` | Sí | Descripción de la característica |
+| Prop          | Tipo     | Requerido | Descripción                      |
+| ------------- | -------- | --------- | -------------------------------- |
+| `icon`        | `string` | Sí        | Ruta al icono SVG                |
+| `title`       | `string` | Sí        | Título de la característica      |
+| `description` | `string` | Sí        | Descripción de la característica |
 
 **Uso:**
 
@@ -316,16 +319,16 @@ interface Feature {
 
 **Props:**
 
-| Prop | Tipo | Por Defecto | Descripción |
-|------|------|-------------|-------------|
-| `title` | `string` | `'Simple, transarent pricing'` | Título de la sección |
-| `description` | `string` | `'Excepteur sint occaecat...'` | Descripción de la sección |
-| `planName` | `string` | `'Starter Plan'` | Nombre del plan de precios |
-| `price` | `string` | `'$34'` | Precio mostrado |
-| `priceLabel` | `string` | `'/month'` | Etiqueta del período de precio |
-| `features` | `string[]` | 4 características por defecto | Lista de características incluidas |
-| `buttonText` | `string` | `'Get started now'` | Texto del botón CTA |
-| `buttonHref` | `string` | `'#'` | Enlace del botón CTA |
+| Prop          | Tipo       | Por Defecto                    | Descripción                        |
+| ------------- | ---------- | ------------------------------ | ---------------------------------- |
+| `title`       | `string`   | `'Simple, transarent pricing'` | Título de la sección               |
+| `description` | `string`   | `'Excepteur sint occaecat...'` | Descripción de la sección          |
+| `planName`    | `string`   | `'Starter Plan'`               | Nombre del plan de precios         |
+| `price`       | `string`   | `'$34'`                        | Precio mostrado                    |
+| `priceLabel`  | `string`   | `'/month'`                     | Etiqueta del período de precio     |
+| `features`    | `string[]` | 4 características por defecto  | Lista de características incluidas |
+| `buttonText`  | `string`   | `'Get started now'`            | Texto del botón CTA                |
+| `buttonHref`  | `string`   | `'#'`                          | Enlace del botón CTA               |
 
 **Uso:**
 
@@ -349,20 +352,16 @@ interface Feature {
 
 **Props:**
 
-| Prop | Tipo | Por Defecto | Descripción |
-|------|------|-------------|-------------|
-| `title` | `string` | `'Still not convinced...'` | Titular del CTA |
-| `buttonText` | `string` | `'Get started now'` | Texto del botón |
-| `buttonHref` | `string` | `'#'` | Enlace del botón |
+| Prop         | Tipo     | Por Defecto                | Descripción      |
+| ------------ | -------- | -------------------------- | ---------------- |
+| `title`      | `string` | `'Still not convinced...'` | Titular del CTA  |
+| `buttonText` | `string` | `'Get started now'`        | Texto del botón  |
+| `buttonHref` | `string` | `'#'`                      | Enlace del botón |
 
 **Uso:**
 
 ```vue
-<CtaSection
-  title="¿Listo para comenzar?"
-  button-text="Regístrate Gratis"
-  button-href="/registro"
-/>
+<CtaSection title="¿Listo para comenzar?" button-text="Regístrate Gratis" button-href="/registro" />
 ```
 
 ---
@@ -375,10 +374,10 @@ interface Feature {
 
 **Props:**
 
-| Prop | Tipo | Por Defecto | Descripción |
-|------|------|-------------|-------------|
-| `logoSrc` | `string` | `'/images/logo.svg'` | Ruta a la imagen del logo |
-| `logoAlt` | `string` | `'Solid'` | Texto alternativo para el logo |
+| Prop      | Tipo     | Por Defecto          | Descripción                    |
+| --------- | -------- | -------------------- | ------------------------------ |
+| `logoSrc` | `string` | `'/images/logo.svg'` | Ruta a la imagen del logo      |
+| `logoAlt` | `string` | `'Solid'`            | Texto alternativo para el logo |
 
 **Uso:**
 
@@ -396,33 +395,33 @@ El sistema de diseño está construido sobre propiedades CSS personalizadas defi
 
 #### Colores
 
-| Variable | Valor | Uso |
-|----------|-------|-----|
-| `--color-bg` | `#1d2026` | Fondo principal |
-| `--color-bg-alt` | `#2c3039` | Fondo alternativo |
-| `--color-text` | `#ffffff` | Texto principal |
-| `--color-text-alt` | `#8a94a7` | Texto secundario/atenuado |
-| `--color-primary` | `#0270d7` | Color primario de marca (azul) |
-| `--color-accent` | `#00bffb` | Color de acento (cian) |
+| Variable           | Valor     | Uso                            |
+| ------------------ | --------- | ------------------------------ |
+| `--color-bg`       | `#1d2026` | Fondo principal                |
+| `--color-bg-alt`   | `#2c3039` | Fondo alternativo              |
+| `--color-text`     | `#ffffff` | Texto principal                |
+| `--color-text-alt` | `#8a94a7` | Texto secundario/atenuado      |
+| `--color-primary`  | `#0270d7` | Color primario de marca (azul) |
+| `--color-accent`   | `#00bffb` | Color de acento (cian)         |
 
 #### Tipografía
 
-| Variable | Valor | Uso |
-|----------|-------|-----|
-| `--font-family` | `'Heebo', sans-serif` | Familia tipográfica base |
-| `--font-size-base` | `16px` | Tamaño de fuente base |
-| `--font-size-sm` | `14px` | Texto pequeño |
-| `--font-size-xs` | `12px` | Texto extra pequeño |
-| `--font-size-h1` | `38px` / `48px` (escritorio) | Encabezado 1 |
-| `--font-size-h2` | `30px` / `38px` (escritorio) | Encabezado 2 |
-| `--font-size-h3` | `24px` | Encabezado 3 |
-| `--font-size-h4` | `20px` | Encabezado 4 |
+| Variable           | Valor                        | Uso                      |
+| ------------------ | ---------------------------- | ------------------------ |
+| `--font-family`    | `'Heebo', sans-serif`        | Familia tipográfica base |
+| `--font-size-base` | `16px`                       | Tamaño de fuente base    |
+| `--font-size-sm`   | `14px`                       | Texto pequeño            |
+| `--font-size-xs`   | `12px`                       | Texto extra pequeño      |
+| `--font-size-h1`   | `38px` / `48px` (escritorio) | Encabezado 1             |
+| `--font-size-h2`   | `30px` / `38px` (escritorio) | Encabezado 2             |
+| `--font-size-h3`   | `24px`                       | Encabezado 3             |
+| `--font-size-h4`   | `20px`                       | Encabezado 4             |
 
 #### Espaciado
 
-| Variable | Valor |
-|----------|-------|
-| `--spacing-8` | `8px` |
+| Variable       | Valor  |
+| -------------- | ------ |
+| `--spacing-8`  | `8px`  |
 | `--spacing-16` | `16px` |
 | `--spacing-24` | `24px` |
 | `--spacing-32` | `32px` |
@@ -503,19 +502,23 @@ Las animaciones de la sección hero son gestionadas por el composable `useHeroAn
 
 ```typescript
 // Flujo de animación simplificado
-anime.timeline()
+anime
+  .timeline()
   .add({
     targets: '.hero-ball',
     translateY: ['-80px', '0'],
     opacity: [0, 1],
-    duration: 800
+    duration: 800,
   })
-  .add({
-    targets: '.hero-illustration',
-    translateY: ['40px', '0'],
-    opacity: [0, 1],
-    duration: 600
-  }, '-=400')
+  .add(
+    {
+      targets: '.hero-illustration',
+      translateY: ['40px', '0'],
+      opacity: [0, 1],
+      duration: 600,
+    },
+    '-=400',
+  )
 ```
 
 ### Integración de ScrollReveal
@@ -529,7 +532,7 @@ ScrollReveal().reveal('.feature-card', {
   duration: 600,
   distance: '20px',
   origin: 'bottom',
-  interval: 100
+  interval: 100,
 })
 ```
 
@@ -565,13 +568,16 @@ interface Testimonial {
   role: string
 }
 
-withDefaults(defineProps<{
-  title?: string
-  testimonials?: Testimonial[]
-}>(), {
-  title: 'Lo Que Dicen Nuestros Clientes',
-  testimonials: () => []
-})
+withDefaults(
+  defineProps<{
+    title?: string
+    testimonials?: Testimonial[]
+  }>(),
+  {
+    title: 'Lo Que Dicen Nuestros Clientes',
+    testimonials: () => [],
+  },
+)
 </script>
 
 <template>
@@ -605,7 +611,8 @@ import TestimonialsSection from './components/TestimonialsSection.vue'
     <main>
       <HeroSection />
       <FeaturesSection />
-      <TestimonialsSection />  <!-- Añádelo aquí -->
+      <TestimonialsSection />
+      <!-- Añádelo aquí -->
       <PricingSection />
       <CtaSection />
     </main>
@@ -673,4 +680,4 @@ Cruip crea plantillas de alta calidad en HTML, React, Vue y Tailwind CSS para st
 
 ---
 
-*Documentación generada siguiendo los principios del Framework Diátaxis.*
+_Documentación generada siguiendo los principios del Framework Diátaxis._
